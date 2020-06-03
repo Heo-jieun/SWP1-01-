@@ -1,2 +1,2 @@
 # 20193228 HEO Jieun
-# kookmin univ. sw
+# kookmin univ. computer SCIENCE
