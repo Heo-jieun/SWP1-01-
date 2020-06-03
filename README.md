@@ -1,2 +1,2 @@
-# 20193228JIEUN HEO
+# 20193228 JIEUN HEO
 # kookmin univ. sw
