@@ -11,9 +11,12 @@ def application(environ, start_response):
         a, b  = int(a), int(b)
         res1 = a+b
         res2 = a*b
-    else: 
+    elif a.isalpha() or b.isalpha():
         res1 = "error"
         res2 = "error"
+    else :
+       res1= 0
+       res2= 0
     response_body = html % {
         'res1': res1,
         'res2': res2 
