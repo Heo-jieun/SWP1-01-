@@ -7,13 +7,16 @@ def application(environ, start_response):
     b = d.get('b', [''])[0]
     res1=00
     res2=00
-    if a.isdigit() and b.isdigit(): 
+    if a.isdigit() and b.isdigit():
         a, b  = int(a), int(b)
         res1 = a+b
-        res2 = a*b 
+        res2 = a*b
+    else: 
+        res1 = "error"
+        res2 = "error"
     response_body = html % {
         'res1': res1,
-        'res2': res2
+        'res2': res2 
     } 
     start_response('200 OK', [
         ('Content-Type', 'text/html'),
