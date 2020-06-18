@@ -14,9 +14,9 @@ def application(environ, start_response):
     elif a.isalpha() or b.isalpha():
         res1 = "error"
         res2 = "error"
-    else :
-       res1= 0
-       res2= 0
+    else: 
+       res1="please put number" 
+       res2="please put number" 
     response_body = html % {
         'res1': res1,
         'res2': res2 
